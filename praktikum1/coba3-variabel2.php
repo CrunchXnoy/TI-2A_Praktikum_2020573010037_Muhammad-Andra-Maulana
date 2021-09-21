@@ -12,7 +12,7 @@
     <?php
     $jalan = "Medan - B.Aceh";
     $noRumah = 29;
-    $blok = 4;
+    $blok = "4C";
     $jumlahPenghuni = 3;
     echo "Hasil Variabel variabel jalan + variabel noRumah adalahaaaaa ";
     echo $alamat = $jalan . $noRumah;
