@@ -13,7 +13,7 @@
         $hasil = mysqli_query($conn, "select * from liga");
         while ($row = mysqli_fetch_array($hasil)){
             echo "Liga" . $row["negara"]; 
-            echo " mempunyai" . $row[2];
+            echo " mempunyai " . $row[2];
             echo " wakil di liga champion <br>";
         }
     ?>
