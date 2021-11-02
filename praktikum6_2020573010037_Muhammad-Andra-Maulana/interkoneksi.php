@@ -15,7 +15,6 @@
         }else{
             echo"Server tidak terkoneksi";
         }
-
     ?>
 </body>
 </html>
