@@ -41,6 +41,7 @@
 
   <!-- NAVBAR -->
   <div class="container-fluid">
+    
     <?php
     require "navbar.php";
     ?>
