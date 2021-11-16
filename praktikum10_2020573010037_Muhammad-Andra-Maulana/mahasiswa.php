@@ -1,3 +1,7 @@
+<?php
+include "proses/session.php";
+// require"proses/session.php";
+?>
 <!doctype html>
 <html lang="en">
 
@@ -54,17 +58,39 @@
         require "sidebar.php";
         ?>
       </div>
+      <!-- END SIDEBAR -->
       <div class="col-9">
         <div class="card">
           <div class="card-header">
             Biodata Mahasiswa
           </div>
-          <div class="card-body">
-            <blockquote class="blockquote mb-0">
-              Nama  : Muhammad Andra Maulana <br>
-              NIM   : 2020573010037 <br>
-            </blockquote>
-          </div>
+          <!-- TABLE -->
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nama</th>
+                <th scope="col">Email</th>
+                <th scope="col">Level</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <?php $i = 1; ?>
+            <?php while ($row = mysqli_fetch_array($result)) : ?>
+            <tbody>
+              <tr>
+                <th scope="row"><?= $i; ?></th>
+                <td><?= $row["nama"]; ?></td>
+                <td><?= $row["email"]; ?></td>
+                <td><?= $row["level"]; ?></td>
+                <td><a href=""><span class="badge rounded-pill bg-warning">Edit</span></a>
+                <a href=""><span class="badge rounded-pill bg-danger">Delete</span></a></td>
+              </tr>
+              <?php $i++; ?>
+              <?php endwhile; ?>
+            </tbody>
+          </table>
+          <!-- END TABLE -->
         </div>
       </div>
     </div>
