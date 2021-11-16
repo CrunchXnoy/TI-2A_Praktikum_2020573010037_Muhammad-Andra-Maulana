@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.88.1">
-  <title>SIPBATIK | Dashboard Mahasiswa</title>
+  <title>SIPBATIK | Dashboard Dosen</title>
 
   <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sidebars/"> -->
 
@@ -57,12 +57,12 @@
       <div class="col-9">
         <div class="card">
           <div class="card-header">
-            Biodata Mahasiswa
+            Biodata Dosen
           </div>
           <div class="card-body">
             <blockquote class="blockquote mb-0">
               Nama  : Muhammad Andra Maulana <br>
-              NIM   : 2020573010037 <br>
+              NIP   : 2020573010037 <br>
             </blockquote>
           </div>
         </div>

@@ -9,18 +9,16 @@
         if ($hasil){
                 if (isset($row['email']) && isset($row['password']) && $row['email'] == $email && $row['password'] == $password) {
                 echo "email ada";
+                echo "<script>window.location='../index.php';</script>";
                 $_SESSION['email']=$row['email'];
-                header("Location: ../project.php");
+                // header("Location: ../index.php");
                 }
                 else{ 
-                        echo "<script>
-                        alert ('Mohon maaf email atau password yang anda masukkan salah')
-                        </script>";
+                        echo "<script>alert ('Mohon maaf email atau password yang anda masukkan salah')</script>";
+                        // echo "<script>window.location='proses_signin.php';</script>";
                 }
         }
                 else{
                         echo "Terjadi kesalahan";
                 }
 ?>
-<!-- bagaimana cara membuat jika berhasil login akan balik ke menu index  -->
-<!-- jika salah membuat balik ke menu form login -->
